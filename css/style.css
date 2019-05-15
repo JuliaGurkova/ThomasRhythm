@@ -712,6 +712,7 @@ h1 {
 
 .block-flip {
 	height: 450px;
+	max-width: 370px;
 	position: relative;
 	margin-bottom: 20px;
 	transition: transform 2s ease;
@@ -825,14 +826,8 @@ h1 {
 		margin-bottom: 10px;
 	}
 
-	.block-flip img {
-		max-width: 370px;
-		left: 50%;
-		transform: translate(-50%);
-	}
-
-	.skills {
-		max-width: 370px;
+	.block-flip {
+		left: calc(50% - 185px);
 	}
 
 	.staff-lg {
@@ -863,10 +858,20 @@ h1 {
 @media (max-width: 575px) {
 	.block-flip {
 		height: 340px;
-	}		
+		width: 280px;
+		left: calc(50% - 140px);
+	}
+	
+	.skills-title {
+		margin-bottom: 10px;
+	}
 
-	.block-flip img {
-		width: auto;
+	.skills p {
+		margin-bottom: 5px;
+	}
+
+	.skill {
+		margin-bottom: 2px;
 	}
 }
 
@@ -1757,6 +1762,7 @@ form {
 
 	.info-between {
 		display: block;
+		padding: 15px;
 	}
 
 	.info-required-xs {
